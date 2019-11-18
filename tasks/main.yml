@@ -6,4 +6,4 @@
     - "../vars/{{ ansible_os_family }}.yml"
 
 - include: "install-{{ ansible_os_family }}.yml"
-- include: cloud-init.yml
+- include: config.yml
