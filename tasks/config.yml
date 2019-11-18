@@ -1,6 +1,6 @@
 - name: config | Configuring config.cfg
   template:
-    src: etc/cloud/cloud.cfg.j2
+    src: cloud.cfg.j2
     dest: /etc/cloud/cloud.cfg
     owner: root
     group: root
