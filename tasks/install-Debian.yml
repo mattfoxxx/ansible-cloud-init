@@ -1,0 +1,9 @@
+---
+- name: install | Installing cloud-init
+  apt:
+    name: "{{ cloud-init_package }}"
+    cache_valid_time: 86400
+    state: present
+  when: ansible_os_family == 'Debian'
+  tags: ['install']
+  become: true
